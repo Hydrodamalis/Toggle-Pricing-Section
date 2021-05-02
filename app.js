@@ -10,11 +10,11 @@ const enableYearMode = () => {
     const prices = document.querySelectorAll('.price')
 
     year.forEach((year) => {
-        year.innerHTML = '/mo'
+        year.innerHTML = '/year'
     })
 
     prices.forEach((price, index) => {
-        price.innerHTML = prices[index].innerHTML / 11
+        price.innerHTML = prices[index].innerHTML * 11
     }
     )
 
@@ -26,11 +26,11 @@ const enableMonthMode = () => {
     const prices = document.querySelectorAll('.price')
 
     year.forEach((year) => {
-        year.innerHTML = '/year'
+        year.innerHTML = '/mo'
     })
 
     prices.forEach((price, index) => {
-        price.innerHTML = prices[index].innerHTML * 11
+        price.innerHTML = prices[index].innerHTML / 11
     }
     )
 
